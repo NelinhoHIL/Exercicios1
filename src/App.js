@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import {Text, View, StyleSheet} from 'react-native';
 
-import Botao from './componentes/Botao';
+import Contador from './componentes/Contador';
 
 export default class App extends Component {
   render() {
     return (
       <View style={estilos.container}>
-        <Botao />
+        <Contador valorInicial={50}/>
       </View>
     );
   }
