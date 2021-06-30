@@ -1,22 +1,17 @@
 import React, {Component} from 'react';
 import {Text, View, StyleSheet} from 'react-native';
 
-import Familia from './componentes/relacao/Familia';
-import Membro from './componentes/relacao/Membro';
+import UsuarioLogado from './componentes/UsuarioLogado';
 
 export default class App extends Component {
   render() {
     return (
       <View style={estilos.container}>
-        <Familia>
-           <Membro nome="Ana" sobrenome="Silva"/>
-           <Membro nome="José" sobrenome="Silva"/>
-        </Familia>
-
-        <Familia>
-           <Membro nome="Bianca" sobrenome="Cunha"/>
-           <Membro nome="Gustavo" sobrenome="Cunha"/>
-        </Familia>
+        <UsuarioLogado usuario={ {nome:'teste', email:'teste@teste.com' } }/>
+        <UsuarioLogado usuario={ {nome:'teste 2' } }/>
+        <UsuarioLogado usuario={ {email:'teste@teste.com' } }/>
+        <UsuarioLogado usuario={ null }/>
+        <UsuarioLogado usuario={ {} }/>
       </View>
     );
   }
