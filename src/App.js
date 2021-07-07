@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import {Text, View, StyleSheet} from 'react-native';
 
-import ListaProdutos from './componentes/lista/ListaProdutos';
+import DigiteSeuNome from './componentes/DigiteSeuNome';
 
 export default class App extends Component {
   render() {
     return (
       <View style={estilos.container}>
-        <ListaProdutos />
+        <DigiteSeuNome />
       </View>
     );
   }
