@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import {Text, View, StyleSheet} from 'react-native';
 
-import DigiteSeuNome from './componentes/DigiteSeuNome';
+import DimensoesFixas from './componentes/DimensoesFixas';
 
 export default class App extends Component {
   render() {
     return (
-      <View style={estilos.container}>
-        <DigiteSeuNome />
+      <View>
+        <DimensoesFixas />
       </View>
     );
   }
