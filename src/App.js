@@ -1,17 +1,27 @@
 import React, {Component} from 'react';
 import {Text, View, StyleSheet} from 'react-native';
+import { NavigationContainer } from "@react-navigation/native";
+import { MainStackNavigator } from "./StackNavigator";
+import BottomTabNavigator from "./TabNavigator";
+import DrawerNavigator from "./DrawerNavigator";
 
-import DimensoesFixas from './componentes/DimensoesFixas';
-
-export default class App extends Component {
-  render() {
-    return (
-      <View>
-        <DimensoesFixas />
-      </View>
-    );
-  }
+export default App = () => {
+  return (
+    <NavigationContainer>
+      <DrawerNavigator  />
+    </NavigationContainer>
+  );
 }
+
+// export default class App extends Component {
+//   render() {
+//     return (
+//       <View>
+//         <DimensoesFixas />
+//       </View>
+//     );
+//   }
+// }
 
 const estilos = StyleSheet.create({
   container: {

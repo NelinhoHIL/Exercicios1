@@ -1,8 +1,7 @@
 import React from 'react';
 import { Button } from 'react-native';
 
-export default props => {
- 
+const Botao = () => {
     function executar(){
         console.warn('Botão acionado!')
     }
@@ -27,4 +26,6 @@ export default props => {
             />  
         </>
     )
-}
+  };
+
+export default Botao;
