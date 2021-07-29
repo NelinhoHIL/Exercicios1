@@ -1,16 +1,20 @@
 import React, {Component} from 'react';
 import {Text, View, StyleSheet} from 'react-native';
-import Mega from './componentes/MegaSena/Mega';
+
+
+import CalculoIMC from './componentes/CalculoIMC';
+
 
 export default class App extends Component {
   render() {
     return (
-      <View style={estilos.container}>
-        <Mega qtdeNumeros={7}/>
+      <View style={estilos.container} >
+        <CalculoIMC />
       </View>
     );
   }
 }
+
 
 
 // export default App = () => {
@@ -20,6 +24,8 @@ export default class App extends Component {
 //     </NavigationContainer>
 //   );
 // }
+
+
 
 const estilos = StyleSheet.create({
   container: {
